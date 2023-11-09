@@ -38,6 +38,7 @@
 
          img {
             max-height: 70px;
+            width: 100%;
          }
       }
    }
@@ -146,6 +147,16 @@
    }
 }
 
+#technologies {
+   .essential__encrypt__right__body__item {
+      .flex {
+         img {
+            width: 100%;
+         }
+      }
+   }
+}
+
 .testimonials__inner {
    .container {
       display: grid;
@@ -168,11 +179,15 @@
             .flex {
                align-items: center;
                gap: 24px;
+
+               .testimonials__user {
+                  min-width: 75px;
+               }
             }
 
             .testimonials__details {
                .testimonials__details__name {
-                  font-size: 18px;
+                  font-size: 15px;
                }
 
                .testimonials__details__position {
@@ -233,7 +248,7 @@
    .news__wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 24px;
+      gap: 24px;
 
       .news__wrapper__item {
          background-color: rgba(118, 198, 134, 0.08);
