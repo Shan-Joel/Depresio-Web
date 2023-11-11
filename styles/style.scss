@@ -413,11 +413,12 @@ h5 {
    }
 
    .dep__sub__heading {
-      font-size: 42px;
+      font-size: 40px;
    }
 
    .dep__sub__heading__para {
       font-size: 12px;
+      text-align: left;
    }
 
    .news {
@@ -464,6 +465,14 @@ h5 {
    .news {
       .news__wrapper {
          grid-template-columns: 1fr;
+      }
+   }
+
+   .essential {
+      .flex {
+         .encrypt--grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+         }
       }
    }
 }
