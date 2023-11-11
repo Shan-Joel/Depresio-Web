@@ -320,7 +320,7 @@ h5 {
 
 .x-line {
    height: 5px;
-   max-width: 2%;
+   max-width: 8%;
    background-image: linear-gradient(271deg, #7ee787ba 0%, #594189 100%, #8666c3, #846bb3);
    margin: 48px auto;
 }
@@ -342,6 +342,25 @@ h5 {
 ::-webkit-scrollbar-thumb {
    // background: #74bc86c2;
    background: linear-gradient(187deg, #7ee787 0%, #543c82 100%);
+}
+
+.dep__sub__heading__para {
+   text-align: end;
+   line-height: 26px;
+}
+
+#milestones {
+   .essential__encrypt__right__body__item {
+      .flex {
+         display: flex;
+         align-items: center;
+
+         img {
+            width: 30px;
+            height: 30px;
+         }
+      }
+   }
 }
 
 // ************ Responsive Sections ****************
@@ -367,6 +386,16 @@ h5 {
 @media (max-width: 980px) {
    section {
       padding: 50px 0 !important;
+
+      p.mt--16 {
+         font-size: 12px;
+      }
+   }
+
+   section {
+      &:first-of-type {
+         padding: 0 !important;
+      }
    }
 
    section {
@@ -393,7 +422,7 @@ h5 {
 
    .news {
       .news__wrapper {
-         grid-template-columns: 1fr;
+         grid-template-columns: 1fr 1fr;
 
          img {
             width: 100%;
@@ -425,6 +454,16 @@ h5 {
             grid-template-columns: 1fr;
             gap: 20px;
          }
+      }
+   }
+
+   .x-line {
+      max-width: 15% !important;
+   }
+
+   .news {
+      .news__wrapper {
+         grid-template-columns: 1fr;
       }
    }
 }

@@ -380,6 +380,8 @@ footer p {
 }
 .testimonials__inner .container .testimonials__inner__item .testimonials__inner__item__header .flex .testimonials__user {
   min-width: 75px;
+  max-width: 75px;
+  border-radius: 25%;
 }
 .testimonials__inner .container .testimonials__inner__item .testimonials__inner__item__header .testimonials__details .testimonials__details__name {
   font-size: 15px;
@@ -401,12 +403,13 @@ footer p {
 }
 .community .community__image__wrapper .community__body {
   position: absolute;
-  top: 20%;
+  top: 16%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  padding: 12px;
 }
 .community .community__image__wrapper .community__body .community__logo {
   width: 60px;
@@ -787,7 +790,7 @@ h5 {
 
 .x-line {
   height: 5px;
-  max-width: 2%;
+  max-width: 8%;
   background-image: linear-gradient(271deg, rgba(126, 231, 135, 0.7294117647) 0%, #594189 100%, #8666c3, #846bb3);
   margin: 48px auto;
 }
@@ -810,6 +813,20 @@ h5 {
   background: linear-gradient(187deg, #7ee787 0%, #543c82 100%);
 }
 
+.dep__sub__heading__para {
+  text-align: end;
+  line-height: 26px;
+}
+
+#milestones .essential__encrypt__right__body__item .flex {
+  display: flex;
+  align-items: center;
+}
+#milestones .essential__encrypt__right__body__item .flex img {
+  width: 30px;
+  height: 30px;
+}
+
 @media (max-width: 1200px) {
   #team .testimonials__inner .container {
     grid-template-columns: 1fr 1fr;
@@ -824,6 +841,12 @@ h5 {
 @media (max-width: 980px) {
   section {
     padding: 50px 0 !important;
+  }
+  section p.mt--16 {
+    font-size: 12px;
+  }
+  section:first-of-type {
+    padding: 0 !important;
   }
   section .flex.align--center {
     flex-direction: column;
@@ -840,7 +863,7 @@ h5 {
     font-size: 12px;
   }
   .news .news__wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .news .news__wrapper img {
     width: 100%;
@@ -859,6 +882,12 @@ h5 {
   #team .testimonials__inner .container {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  .x-line {
+    max-width: 15% !important;
+  }
+  .news .news__wrapper {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 450px) {
