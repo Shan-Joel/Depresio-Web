@@ -182,6 +182,8 @@
 
                .testimonials__user {
                   min-width: 75px;
+                  max-width: 75px;
+                  border-radius: 25%;
                }
             }
 
@@ -225,12 +227,13 @@
 
       .community__body {
          position: absolute;
-         top: 20%;
+         top: 16%;
          display: flex;
          flex-direction: column;
          justify-content: center;
          align-items: center;
          gap: 16px;
+         padding: 12px;
 
          .community__logo {
             width: 60px;
